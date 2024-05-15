@@ -17,4 +17,6 @@ const sleep = (ms:number) => {
     console.log('Starting web socket, subscription ID: ', subscriptionId);
     await sleep(10000); //Wait 10 seconds for Socket Testing
     await solanaConnection.requestAirdrop(ACCOUNT_TO_WATCH, 10*LAMPORTS_PER_SOL);
+    await solanaConnection.removeAccountChangeListener(subscriptionId);
+    console.log(`Websocket ID: ${subscriptionId} closed.`);
 })()
