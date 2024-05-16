@@ -59,7 +59,7 @@ async function fetchEstimatePriorityFees({
 
 const params: EstimatePriorityFeesParams = {
     last_n_blocks: 100,
-    account: 'wMqGDZMrYfGUFpwjWKcYto6XoB1roz22R99fUocZf1w',
+    account:'GrfytMSKwA1yfjWErCTgxtECfMEU4o9VqPqYRdJER7tD',
     endpoint: 'https://necessary-spring-shard.solana-devnet.quiknode.pro/0417dc7b4af48216baf61e31edbabb9a71579a91/'
 };
 
