@@ -3,7 +3,7 @@ const QUICKNODE_RPC = 'https://necessary-spring-shard.solana-devnet.quiknode.pro
 const SOLANA_CONNECTION = new Connection(QUICKNODE_RPC);
 const DESTINATION_WALLET = Keypair.generate();
 const signerkey=new PublicKey('GrfytMSKwA1yfjWErCTgxtECfMEU4o9VqPqYRdJER7tD');
-const SIGNER_WALLET=Keypair.fromSecretKey(new Uint8Array([]));
+const SIGNER_WALLET=Keypair.fromSecretKey(new Uint8Array([0,0,0])); 
 const destinationkey=new PublicKey('HpuaL2sndmY8uD1JtwJkgM3YxQDqWS2Yzyz3zejVRJCF');
 const INSTRUCTIONS: TransactionInstruction = 
     SystemProgram.transfer({
